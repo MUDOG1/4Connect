@@ -1,0 +1,56 @@
+Klasse Spieler
++ Name
++ Farbe
+
+Klasse Spielfeld
++ Breite 7
++ Hoehe 8
++ reihe
++ grid (breite*höhe) 
+
+fkt spielfeld_anzeigen
+
+fkt spielstein_einwerfen(spieler)
+
+fkt __check(spieler)
+
+
+fkt __horizontal(spieler)
+    four_in_a_row = 0 
+    for x = 0, x > 5
+       if __status(x, 0) == Spieler.Farbe
+            four_in_a_row++
+    x++
+    if four_in_a_row >=4:
+        print(winner!)
+
+fkt __vertikal
+
+<== DONE
+
+TODO ==>
+
+fkt __diagonal_runter
+spalte reihe => 0 
+bei jedem Durchlauf beide +1 
+
+
+fkt __diagonal_rauf
+
+fkt __status(x, y) -> Farbe
+
+
++-+-+-+-+-+
++-+-+-+-+-+
++-+-+-+-+-+
++-+-+-+-+-+
++-+-+-+-+-+
+
+
+  0 1 2 3 4 5 6 
+0 X R         x x
+1 Y X R         x
+2   Y X R             spalte 3 reihe 2, spalte 2 reihe 1, spalte 1 reihe 0
+3     Y X R            spalte 3 reihe 3
+4       Y   R
+5         Y   R
